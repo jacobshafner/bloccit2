@@ -18,6 +18,8 @@ require 'random_data'
 end
 posts = Post.all
 
+Post.find_or_create_by(title: "test", body: "body")
+
 # create comments
 
 100.times do
